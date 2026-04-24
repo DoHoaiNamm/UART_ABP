@@ -1,0 +1,12 @@
+for i in all.v \
+alu.v \
+cpu.v \
+datapath.v \
+fsm.v \
+io_wrapper.v \
+ram.v 
+do
+  sed -f infile $i > tmp
+  mv tmp $i
+  echo $i
+done
