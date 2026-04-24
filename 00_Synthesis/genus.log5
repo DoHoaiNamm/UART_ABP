@@ -1,0 +1,812 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2023 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+[11:44:09.433049] Configured Lic search path (21.01-s002): 5280@172.28.133.168
+
+Version: 22.12-s082_1, built Sat May 06 04:39:19 PDT 2023
+Options: -files run_syn.tcl 
+Date:    Fri Apr 24 11:44:09 2026
+Host:    training-quyetdt3.novalocal (x86_64 w/Linux 3.10.0-1160.119.1.el7.x86_64) (1core*1cpu*1physical cpu*Intel Xeon Processor (Icelake) 16384KB) (8008876KB)
+PID:     17588
+OS:      CentOS Linux release 7.9.2009 (Core)
+
+Checking out license: Genus_Synthesis
+[11:44:09.244761] Periodic Lic check successful
+[11:44:09.244776] Feature usage summary:
+[11:44:09.244777] Genus_Synthesis
+
+
+
+***********************************************************************************************************
+***********************************************************************************************************
+
+
+
+Finished executable startup (1 second elapsed).
+
+Loading tool scripts...
+Finished loading tool scripts (19 seconds elapsed).
+
+#@ Processing -files option
+@genus 1> source run_syn.tcl
+#@ Begin verbose source ./run_syn.tcl
+@file(run_syn.tcl) 3: ::legacy::set_attribute common_ui false     ;# run Genus in Legacy UI only if Common UI was used
+  Setting attribute of root '/': 'common_ui' = false
+model name	: Intel Xeon Processor (Icelake)
+cpu MHz		: 2194.820
+Hostname : training-quyetdt3.novalocal
+  Setting attribute of root '/': 'init_lib_search_path' = . ../libraries 
+  Setting attribute of root '/': 'script_search_path' = . 
+  Setting attribute of root '/': 'init_hdl_search_path' = . ../rtl/uart_apb
+  Setting attribute of root '/': 'information_level' = 7
+  Setting attribute of root '/': 'auto_ungroup' = none
+Info    : Missing library level attribute. [LBR-516]
+        : slew_derate_from_library not specified in the library, using .lib default of 1. (File /home/QUYETDT3/DATN/ver3_UART_APB/00_Synthesis/../libraries/lib/max/slow.lib, Line 8)
+Info    : Missing a function attribute in the output pin definition. [LBR-518]
+        : Functionality is missing at pin 'Y' for the cell 'HOLDX1'. (File /home/QUYETDT3/DATN/ver3_UART_APB/00_Synthesis/../libraries/lib/max/slow.lib, Line 32508)
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'library_features' encountered. Ignoring (File /home/QUYETDT3/DATN/ver3_UART_APB/00_Synthesis/../libraries/lib/max/pdkIO.lib, Line 141)
+        : Check to see if this construct is really needed for synthesis. Many liberty constructs are not actually required.
+
+  Message Summary for Library both libraries:
+  *******************************************
+  Missing a function attribute in the output pin definition. [LBR-518]: 1
+  Missing library level attribute. [LBR-516]: 1
+  An unsupported construct was detected in this library. [LBR-40]: 1
+  *******************************************
+ 
+            Reading file '/home/QUYETDT3/DATN/ver3_UART_APB/00_Synthesis/../libraries/lib/max/slow.lib'
+            Reading file '/home/QUYETDT3/DATN/ver3_UART_APB/00_Synthesis/../libraries/lib/max/pdkIO.lib'
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 1.080000, 125.000000) in library 'slow.lib'.
+        : The nominal operating condition is represented, either by the nominal PVT values specified in the library source (via nom_process,nom_voltage and nom_temperature respectively), or by the default PVT values (1.0,1.0,1.0).
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 1.080000, 125.000000) in library 'pdkIO.lib'.
+Warning : Libcell has no area attribute.  Defaulting to 0 area. [LBR-43]
+        : Assigning 0 area to library cell 'GPDK_IO.lib/PADO'.
+        : Specify a valid area value for the libcell.
+Warning : Libcell has no area attribute.  Defaulting to 0 area. [LBR-43]
+        : Assigning 0 area to library cell 'GPDK_IO.lib/PADI'.
+Warning : Libcell has no area attribute.  Defaulting to 0 area. [LBR-43]
+        : Assigning 0 area to library cell 'GPDK_IO.lib/PADIO'.
+Warning : Libcell has no area attribute.  Defaulting to 0 area. [LBR-43]
+        : Assigning 0 area to library cell 'gpdk045bc/ADDFHX2'.
+Warning : Libcell has no area attribute.  Defaulting to 0 area. [LBR-43]
+        : Assigning 0 area to library cell 'gpdk045bc/ADDFHX4'.
+Warning : Libcell has no area attribute.  Defaulting to 0 area. [LBR-43]
+        : Assigning 0 area to library cell 'gpdk045bc/ADDFHXL'.
+Warning : Libcell has no area attribute.  Defaulting to 0 area. [LBR-43]
+        : Assigning 0 area to library cell 'gpdk045bc/ADDFXL'.
+Warning : Libcell has no area attribute.  Defaulting to 0 area. [LBR-43]
+        : Assigning 0 area to library cell 'gpdk045bc/ADDHX2'.
+Warning : Libcell has no area attribute.  Defaulting to 0 area. [LBR-43]
+        : Assigning 0 area to library cell 'gpdk045bc/ADDHXL'.
+Warning : Libcell has no area attribute.  Defaulting to 0 area. [LBR-43]
+        : Assigning 0 area to library cell 'gpdk045bc/AND2X4'.
+Warning : Libcell has no area attribute.  Defaulting to 0 area. [LBR-43]
+        : Assigning 0 area to library cell 'gpdk045bc/AND2X6'.
+Warning : Libcell has no area attribute.  Defaulting to 0 area. [LBR-43]
+        : Assigning 0 area to library cell 'gpdk045bc/AND2XL'.
+Warning : Libcell has no area attribute.  Defaulting to 0 area. [LBR-43]
+        : Assigning 0 area to library cell 'gpdk045bc/AND3X1'.
+Warning : Libcell has no area attribute.  Defaulting to 0 area. [LBR-43]
+        : Assigning 0 area to library cell 'gpdk045bc/AND3X8'.
+Warning : Libcell has no area attribute.  Defaulting to 0 area. [LBR-43]
+        : Assigning 0 area to library cell 'gpdk045bc/AND3XL'.
+Warning : Libcell has no area attribute.  Defaulting to 0 area. [LBR-43]
+        : Assigning 0 area to library cell 'gpdk045bc/AND4X1'.
+Warning : Libcell has no area attribute.  Defaulting to 0 area. [LBR-43]
+        : Assigning 0 area to library cell 'gpdk045bc/AND4X4'.
+Warning : Libcell has no area attribute.  Defaulting to 0 area. [LBR-43]
+        : Assigning 0 area to library cell 'gpdk045bc/AND4X8'.
+Warning : Libcell has no area attribute.  Defaulting to 0 area. [LBR-43]
+        : Assigning 0 area to library cell 'gpdk045bc/AND4XL'.
+Warning : Libcell has no area attribute.  Defaulting to 0 area. [LBR-43]
+        : Assigning 0 area to library cell 'gpdk045bc/AO21X1'.
+Warning : Maximum message print count reached. [MESG-11]
+        : Maximum print count of '20' reached for message 'LBR-43'.
+Info    : An output library pin lacks a function attribute. [LBR-41]
+        : Output pin 'HOLDX1/Y' has no function.
+        : If the remainder of this library cell's semantic checks are successful, it will be considered as a timing-model (because one of its outputs does not have a valid function.
+Warning : Found libraries with and without pg_pin construct. [LBR-12]
+        : Libraries with and without pg_pin construct have been loaded.
+        : This can lead to issues later in the flow.
+Info    : Ignoring specified timing sense. [LBR-170]
+        : The 'timing_sense' definition 'positive_unate' for library pin 'TLATNSRX4/Q' is ignored.
+        : Timing sense should never be set with 'rising_edge' or 'falling_edge' timing type.
+Info    : Ignoring specified timing sense. [LBR-170]
+        : The 'timing_sense' definition 'positive_unate' for library pin 'TLATNSRX4/Q' is ignored.
+Info    : Ignoring specified timing sense. [LBR-170]
+        : The 'timing_sense' definition 'negative_unate' for library pin 'TLATNSRX4/QN' is ignored.
+Info    : Ignoring specified timing sense. [LBR-170]
+        : The 'timing_sense' definition 'negative_unate' for library pin 'TLATNSRX4/QN' is ignored.
+Info    : Ignoring specified timing sense. [LBR-170]
+        : The 'timing_sense' definition 'positive_unate' for library pin 'TLATNSRXL/Q' is ignored.
+Info    : Ignoring specified timing sense. [LBR-170]
+        : The 'timing_sense' definition 'positive_unate' for library pin 'TLATNSRXL/Q' is ignored.
+Info    : Ignoring specified timing sense. [LBR-170]
+        : The 'timing_sense' definition 'negative_unate' for library pin 'TLATNSRXL/QN' is ignored.
+Info    : Ignoring specified timing sense. [LBR-170]
+        : The 'timing_sense' definition 'negative_unate' for library pin 'TLATNSRXL/QN' is ignored.
+Info    : Ignoring specified timing sense. [LBR-170]
+        : The 'timing_sense' definition 'positive_unate' for library pin 'TLATSRX2/Q' is ignored.
+Info    : Ignoring specified timing sense. [LBR-170]
+        : The 'timing_sense' definition 'positive_unate' for library pin 'TLATSRX2/Q' is ignored.
+Info    : Ignoring specified timing sense. [LBR-170]
+        : The 'timing_sense' definition 'negative_unate' for library pin 'TLATSRX2/QN' is ignored.
+Info    : Ignoring specified timing sense. [LBR-170]
+        : The 'timing_sense' definition 'negative_unate' for library pin 'TLATSRX2/QN' is ignored.
+Info    : Ignoring specified timing sense. [LBR-170]
+        : The 'timing_sense' definition 'positive_unate' for library pin 'TLATSRX4/Q' is ignored.
+Info    : Ignoring specified timing sense. [LBR-170]
+        : The 'timing_sense' definition 'positive_unate' for library pin 'TLATSRX4/Q' is ignored.
+Info    : Ignoring specified timing sense. [LBR-170]
+        : The 'timing_sense' definition 'negative_unate' for library pin 'TLATSRX4/QN' is ignored.
+Info    : Ignoring specified timing sense. [LBR-170]
+        : The 'timing_sense' definition 'negative_unate' for library pin 'TLATSRX4/QN' is ignored.
+Info    : Ignoring specified timing sense. [LBR-170]
+        : The 'timing_sense' definition 'positive_unate' for library pin 'TLATNSRX2/Q' is ignored.
+Info    : Ignoring specified timing sense. [LBR-170]
+        : The 'timing_sense' definition 'positive_unate' for library pin 'TLATNSRX2/Q' is ignored.
+Info    : Ignoring specified timing sense. [LBR-170]
+        : The 'timing_sense' definition 'negative_unate' for library pin 'TLATNSRX2/QN' is ignored.
+Info    : Ignoring specified timing sense. [LBR-170]
+        : The 'timing_sense' definition 'negative_unate' for library pin 'TLATNSRX2/QN' is ignored.
+Warning : Maximum message print count reached. [MESG-11]
+        : Maximum print count of '20' reached for message 'LBR-170'.
+Info    : Set default library domain. [LBR-109]
+        : The default library domain is '/libraries/library_domains/slow'.
+  Setting attribute of library_domain 'slow': 'library' = ../libraries/lib/max/slow.lib ../libraries/lib/max/pdkIO.lib
+Info    : Missing library level attribute. [LBR-516]
+        : slew_derate_from_library not specified in the library, using .lib default of 1. (File /home/QUYETDT3/DATN/ver3_UART_APB/00_Synthesis/../libraries/lib/min/fast.lib, Line 8)
+Warning : Found multiple definitions. [LBR-504]
+        : Duplicate definition for attribute 'dont_use' encountered. The last definition will be retained. (File /home/QUYETDT3/DATN/ver3_UART_APB/00_Synthesis/../libraries/lib/min/fast.lib, Line 19302)
+        : Reload the library file by removing one of the multiple definitions of the same attribute.
+Info    : Missing a function attribute in the output pin definition. [LBR-518]
+        : Functionality is missing at pin 'Y' for the cell 'HOLDX1'. (File /home/QUYETDT3/DATN/ver3_UART_APB/00_Synthesis/../libraries/lib/min/fast.lib, Line 32507)
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'library_features' encountered. Ignoring (File /home/QUYETDT3/DATN/ver3_UART_APB/00_Synthesis/../libraries/lib/min/pdkIO.lib, Line 141)
+
+  Message Summary for Library both libraries:
+  *******************************************
+  Missing a function attribute in the output pin definition. [LBR-518]: 1
+  Missing library level attribute. [LBR-516]: 1
+  Found multiple definitions. [LBR-504]: 1
+  An unsupported construct was detected in this library. [LBR-40]: 1
+  *******************************************
+ 
+            Reading file '/home/QUYETDT3/DATN/ver3_UART_APB/00_Synthesis/../libraries/lib/min/fast.lib'
+            Reading file '/home/QUYETDT3/DATN/ver3_UART_APB/00_Synthesis/../libraries/lib/min/pdkIO.lib'
+Warning : Libraries have inconsistent nominal operating conditions. In the Liberty library, there are attributes called nom_voltage, nom_process and nom_temperature. Genus reports the message, if the respective values of the 2 given .libs differ. [LBR-38]
+        : The libraries are 'gpdk045wc' and 'GPDK_IO.lib'.
+        : This is a common source of delay calculation confusion and should be avoided.
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 1.320000, 0.000000) in library 'fast.lib'.
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 1.080000, 125.000000) in library 'pdkIO.lib'.
+Warning : Libcell has no area attribute.  Defaulting to 0 area. [LBR-43]
+        : Assigning 0 area to library cell 'GPDK_IO.lib/PADO'.
+Warning : Libcell has no area attribute.  Defaulting to 0 area. [LBR-43]
+        : Assigning 0 area to library cell 'GPDK_IO.lib/PADI'.
+Warning : Libcell has no area attribute.  Defaulting to 0 area. [LBR-43]
+        : Assigning 0 area to library cell 'GPDK_IO.lib/PADIO'.
+Warning : Libcell has no area attribute.  Defaulting to 0 area. [LBR-43]
+        : Assigning 0 area to library cell 'gpdk045wc/ADDFHX2'.
+Warning : Libcell has no area attribute.  Defaulting to 0 area. [LBR-43]
+        : Assigning 0 area to library cell 'gpdk045wc/ADDFHX4'.
+Warning : Libcell has no area attribute.  Defaulting to 0 area. [LBR-43]
+        : Assigning 0 area to library cell 'gpdk045wc/ADDFHXL'.
+Warning : Libcell has no area attribute.  Defaulting to 0 area. [LBR-43]
+        : Assigning 0 area to library cell 'gpdk045wc/ADDFXL'.
+Warning : Libcell has no area attribute.  Defaulting to 0 area. [LBR-43]
+        : Assigning 0 area to library cell 'gpdk045wc/ADDHX2'.
+Warning : Libcell has no area attribute.  Defaulting to 0 area. [LBR-43]
+        : Assigning 0 area to library cell 'gpdk045wc/ADDHXL'.
+Warning : Libcell has no area attribute.  Defaulting to 0 area. [LBR-43]
+        : Assigning 0 area to library cell 'gpdk045wc/AND2X4'.
+Warning : Libcell has no area attribute.  Defaulting to 0 area. [LBR-43]
+        : Assigning 0 area to library cell 'gpdk045wc/AND2X6'.
+Warning : Libcell has no area attribute.  Defaulting to 0 area. [LBR-43]
+        : Assigning 0 area to library cell 'gpdk045wc/AND2XL'.
+Warning : Libcell has no area attribute.  Defaulting to 0 area. [LBR-43]
+        : Assigning 0 area to library cell 'gpdk045wc/AND3X1'.
+Warning : Libcell has no area attribute.  Defaulting to 0 area. [LBR-43]
+        : Assigning 0 area to library cell 'gpdk045wc/AND3X8'.
+Warning : Libcell has no area attribute.  Defaulting to 0 area. [LBR-43]
+        : Assigning 0 area to library cell 'gpdk045wc/AND3XL'.
+Warning : Libcell has no area attribute.  Defaulting to 0 area. [LBR-43]
+        : Assigning 0 area to library cell 'gpdk045wc/AND4X1'.
+Warning : Libcell has no area attribute.  Defaulting to 0 area. [LBR-43]
+        : Assigning 0 area to library cell 'gpdk045wc/AND4X4'.
+Warning : Libcell has no area attribute.  Defaulting to 0 area. [LBR-43]
+        : Assigning 0 area to library cell 'gpdk045wc/AND4X8'.
+Warning : Libcell has no area attribute.  Defaulting to 0 area. [LBR-43]
+        : Assigning 0 area to library cell 'gpdk045wc/AND4XL'.
+Warning : Libcell has no area attribute.  Defaulting to 0 area. [LBR-43]
+        : Assigning 0 area to library cell 'gpdk045wc/AO21X1'.
+Info    : An output library pin lacks a function attribute. [LBR-41]
+        : Output pin 'HOLDX1/Y' has no function.
+Info    : Ignoring specified timing sense. [LBR-170]
+        : The 'timing_sense' definition 'positive_unate' for library pin 'TLATNSRX4/Q' is ignored.
+Info    : Ignoring specified timing sense. [LBR-170]
+        : The 'timing_sense' definition 'positive_unate' for library pin 'TLATNSRX4/Q' is ignored.
+Info    : Ignoring specified timing sense. [LBR-170]
+        : The 'timing_sense' definition 'negative_unate' for library pin 'TLATNSRX4/QN' is ignored.
+Info    : Ignoring specified timing sense. [LBR-170]
+        : The 'timing_sense' definition 'negative_unate' for library pin 'TLATNSRX4/QN' is ignored.
+Info    : Ignoring specified timing sense. [LBR-170]
+        : The 'timing_sense' definition 'positive_unate' for library pin 'TLATNSRXL/Q' is ignored.
+Info    : Ignoring specified timing sense. [LBR-170]
+        : The 'timing_sense' definition 'positive_unate' for library pin 'TLATNSRXL/Q' is ignored.
+Info    : Ignoring specified timing sense. [LBR-170]
+        : The 'timing_sense' definition 'negative_unate' for library pin 'TLATNSRXL/QN' is ignored.
+Info    : Ignoring specified timing sense. [LBR-170]
+        : The 'timing_sense' definition 'negative_unate' for library pin 'TLATNSRXL/QN' is ignored.
+Info    : Ignoring specified timing sense. [LBR-170]
+        : The 'timing_sense' definition 'positive_unate' for library pin 'TLATSRX2/Q' is ignored.
+Info    : Ignoring specified timing sense. [LBR-170]
+        : The 'timing_sense' definition 'positive_unate' for library pin 'TLATSRX2/Q' is ignored.
+Info    : Ignoring specified timing sense. [LBR-170]
+        : The 'timing_sense' definition 'negative_unate' for library pin 'TLATSRX2/QN' is ignored.
+Info    : Ignoring specified timing sense. [LBR-170]
+        : The 'timing_sense' definition 'negative_unate' for library pin 'TLATSRX2/QN' is ignored.
+Info    : Ignoring specified timing sense. [LBR-170]
+        : The 'timing_sense' definition 'positive_unate' for library pin 'TLATSRX4/Q' is ignored.
+Info    : Ignoring specified timing sense. [LBR-170]
+        : The 'timing_sense' definition 'positive_unate' for library pin 'TLATSRX4/Q' is ignored.
+Info    : Ignoring specified timing sense. [LBR-170]
+        : The 'timing_sense' definition 'negative_unate' for library pin 'TLATSRX4/QN' is ignored.
+Info    : Ignoring specified timing sense. [LBR-170]
+        : The 'timing_sense' definition 'negative_unate' for library pin 'TLATSRX4/QN' is ignored.
+Info    : Ignoring specified timing sense. [LBR-170]
+        : The 'timing_sense' definition 'positive_unate' for library pin 'TLATNSRX2/Q' is ignored.
+Info    : Ignoring specified timing sense. [LBR-170]
+        : The 'timing_sense' definition 'positive_unate' for library pin 'TLATNSRX2/Q' is ignored.
+Info    : Ignoring specified timing sense. [LBR-170]
+        : The 'timing_sense' definition 'negative_unate' for library pin 'TLATNSRX2/QN' is ignored.
+Info    : Ignoring specified timing sense. [LBR-170]
+        : The 'timing_sense' definition 'negative_unate' for library pin 'TLATNSRX2/QN' is ignored.
+  Setting attribute of library_domain 'fast': 'library' = ../libraries/lib/min/fast.lib ../libraries/lib/min/pdkIO.lib
+  Setting attribute of library_domain 'slow': 'power_library' = /libraries/library_domains/fast
+  Setting attribute of library_domain 'slow': 'default' = true
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M2_M1_HV' has no resistance value.
+        : If this is the expected behavior, this message can be ignored.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M2_M1_VV' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M2_M1_VH' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M2_M1_HH' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M2_M1_2x1_HV_E' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M2_M1_2x1_HV_W' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M2_M1_1x2_HV_N' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M2_M1_1x2_HV_S' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M3_M2_VH' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M3_M2_HH' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M3_M2_HV' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M3_M2_VV' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M3_M2_M_NH' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M3_M2_M_SH' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M3_M2_2x1_VH_E' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M3_M2_2x1_VH_W' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M3_M2_1x2_VH_N' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M3_M2_1x2_VH_S' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M4_M3_HV' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M4_M3_VV' has no resistance value.
+Warning : Maximum message print count reached. [MESG-11]
+        : Maximum print count of '20' reached for message 'PHYS-129'.
+Error   : The LEF parser encountered an error. [PHYS-110] [set_attribute]
+        : ERROR (LEFPARS-1008): Invalid characters found in '`Ù??Ô·‚◊ŸB{???&—!S?ËB?U?5ı?Ë?r<:Ëﬂ’<??ËR?'.
+These characters might have created by character types other than English. Error in file /home/QUYETDT3/DATN/ver3_UART_APB/00_Synthesis/../libraries/tech/qrc/qx/gpdk045.tch at line 1, on token `Ù??Ô·‚◊ŸB{???&—!S?ËB?U?5ı?Ë?r<:Ëﬂ’<??ËR?.
+
+        : Check the syntax of the LEF file and rerun the command.
+Error   : LEF File Interface. [PHYS-100] [set_attribute]
+        : File '/home/QUYETDT3/DATN/ver3_UART_APB/00_Synthesis/../libraries/tech/qrc/qx/gpdk045.tch' contains an error on or near line '1'.
+        : Check the LEF file and rerun the command.
+Warning : MASTERSLICE layer found after ROUTING or CUT layer. [PHYS-120]
+        : MASTERSLICE layer 'Oxide' is defined after ROUTING layer 'Metal11'.
+        : Masterslice layers are typically polysilicon layers. You must define layers in process order from bottom to top. Correct the layer order in the LEF file.
+Warning : MASTERSLICE layer found after ROUTING or CUT layer. [PHYS-120]
+        : MASTERSLICE layer 'Poly' is defined after ROUTING layer 'Metal11'.
+Warning : Routing layers are defined in previous LEF file already. [PHYS-109]
+        : Routing layers are defined already, this layer 'Metal1' in file '/home/QUYETDT3/DATN/ver3_UART_APB/00_Synthesis/../libraries/lef/gsclib045.fixed.lef' is ignored.
+Warning : Routing layers are defined in previous LEF file already. [PHYS-109]
+        : Routing layers are defined already, this layer 'Metal2' in file '/home/QUYETDT3/DATN/ver3_UART_APB/00_Synthesis/../libraries/lef/gsclib045.fixed.lef' is ignored.
+Warning : Routing layers are defined in previous LEF file already. [PHYS-109]
+        : Routing layers are defined already, this layer 'Metal3' in file '/home/QUYETDT3/DATN/ver3_UART_APB/00_Synthesis/../libraries/lef/gsclib045.fixed.lef' is ignored.
+Warning : Routing layers are defined in previous LEF file already. [PHYS-109]
+        : Routing layers are defined already, this layer 'Metal4' in file '/home/QUYETDT3/DATN/ver3_UART_APB/00_Synthesis/../libraries/lef/gsclib045.fixed.lef' is ignored.
+Warning : Routing layers are defined in previous LEF file already. [PHYS-109]
+        : Routing layers are defined already, this layer 'Metal5' in file '/home/QUYETDT3/DATN/ver3_UART_APB/00_Synthesis/../libraries/lef/gsclib045.fixed.lef' is ignored.
+Warning : Routing layers are defined in previous LEF file already. [PHYS-109]
+        : Routing layers are defined already, this layer 'Metal6' in file '/home/QUYETDT3/DATN/ver3_UART_APB/00_Synthesis/../libraries/lef/gsclib045.fixed.lef' is ignored.
+Warning : Routing layers are defined in previous LEF file already. [PHYS-109]
+        : Routing layers are defined already, this layer 'Metal7' in file '/home/QUYETDT3/DATN/ver3_UART_APB/00_Synthesis/../libraries/lef/gsclib045.fixed.lef' is ignored.
+Warning : Routing layers are defined in previous LEF file already. [PHYS-109]
+        : Routing layers are defined already, this layer 'Metal8' in file '/home/QUYETDT3/DATN/ver3_UART_APB/00_Synthesis/../libraries/lef/gsclib045.fixed.lef' is ignored.
+Warning : Routing layers are defined in previous LEF file already. [PHYS-109]
+        : Routing layers are defined already, this layer 'Metal9' in file '/home/QUYETDT3/DATN/ver3_UART_APB/00_Synthesis/../libraries/lef/gsclib045.fixed.lef' is ignored.
+Warning : Site already defined before, duplicated site will be ignored. [PHYS-106]
+        : Site 'CoreSite' read already, this site in file '/home/QUYETDT3/DATN/ver3_UART_APB/00_Synthesis/../libraries/lef/gsclib045.fixed.lef' is ignored.
+
+  According to lef_library, there are total 11 routing layers [ V(5) / H(6) ]
+
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell DFFNSRX4 cannot be found in library.
+        : Ensure that the proper library files are available and have been imported.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell FILL1 cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell FILL2 cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell FILL64 cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell FILL8 cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell FILL16 cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell ANTENNA cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell FILL4 cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell DFFSX2 cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell FILL32 cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell PADCORNER cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell PADVDD1 cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell PADVDD2 cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell PADVSS1 cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell PADVSS2 cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell DFFNSRX4 cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell FILL1 cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell FILL2 cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell FILL64 cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell FILL8 cannot be found in library.
+Warning : Maximum message print count reached. [MESG-11]
+        : Maximum print count of '20' reached for message 'PHYS-279'.
+Info : Found 0 N2 inbound cells.
+  Setting attribute of root '/': 'lef_library' = /home/QUYETDT3/DATN/ver3_UART_APB/00_Synthesis/../libraries/tech/lef/gsclib045_tech.lef /home/QUYETDT3/DATN/ver3_UART_APB/00_Synthesis/../libraries/tech/qrc/qx/gpdk045.tch /home/QUYETDT3/DATN/ver3_UART_APB/00_Synthesis/../libraries/lef/gsclib045.fixed.lef /home/QUYETDT3/DATN/ver3_UART_APB/00_Synthesis/../libraries/lef/pdkIO.lef
+  Setting attribute of root '/': 'hdl_array_naming_style' = %s[%d]
+  Setting attribute of root '/': 'use_scan_seqs_for_non_dft' = false
+  Setting attribute of root '/': 'lp_insert_clock_gating' = true
+            Reading Verilog file '../rtl/uart_apb/apb_uart_sv.sv'
+            Reading Verilog file '../rtl/uart_apb/top.sv'
+            Reading Verilog file '../rtl/uart_apb/io_generic_fifo.sv'
+            Reading Verilog file '../rtl/uart_apb/uart_dma_handshake.sv'
+            Reading Verilog file '../rtl/uart_apb/uart_interface_block.sv'
+            Reading Verilog file '../rtl/uart_apb/uart_interrupt.sv'
+            Reading Verilog file '../rtl/uart_apb/uart_interrupt_ctrl.sv'
+            Reading Verilog file '../rtl/uart_apb/uart_rx.sv'
+            Reading Verilog file '../rtl/uart_apb/uart_tx.sv'
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'CI' and 'S' in libcell 'ADDFHX2' is 'pos_unate', but unateness determined from function is 'non_unate'.
+        : The 'timing_sense' attribute will be respected.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'CI' and 'S' in libcell 'ADDFHX2' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'CI' and 'S' in libcell 'ADDFHX2'.
+        : Setting the 'timing_sense' to non_unate.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'B' and 'S' in libcell 'ADDFHX2' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'B' and 'S' in libcell 'ADDFHX2' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B' and 'S' in libcell 'ADDFHX2'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'A' and 'S' in libcell 'ADDFHX2' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'A' and 'S' in libcell 'ADDFHX2' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A' and 'S' in libcell 'ADDFHX2'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'CI' and 'S' in libcell 'ADDFHX4' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'CI' and 'S' in libcell 'ADDFHX4' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'CI' and 'S' in libcell 'ADDFHX4'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'B' and 'S' in libcell 'ADDFHX4' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'B' and 'S' in libcell 'ADDFHX4' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B' and 'S' in libcell 'ADDFHX4'.
+Info    : Setting the maximum print count of this message to 10 if information_level is less than 9. [LBR-161]
+        : To print all the warning messages, set the information_level to 9.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A' and 'S' in libcell 'ADDFHX4'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'CI' and 'S' in libcell 'ADDFHXL'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B' and 'S' in libcell 'ADDFHXL'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A' and 'S' in libcell 'ADDFHXL'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'CI' and 'S' in libcell 'ADDFXL'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B' and 'S' in libcell 'ADDFXL'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A' and 'S' in libcell 'ADDFXL'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B' and 'S' in libcell 'ADDHX2'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A' and 'S' in libcell 'ADDHX2'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B' and 'S' in libcell 'ADDHXL'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A' and 'S' in libcell 'ADDHXL'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'S0' and 'Y' in libcell 'CLKMX2X12'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B' and 'Y' in libcell 'CLKXOR2X1'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A' and 'Y' in libcell 'CLKXOR2X1'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B' and 'Y' in libcell 'CLKXOR2X4'.
+Warning : Maximum message print count reached. [MESG-11]
+        : Maximum print count of '20' reached for message 'LBR-162'.
+  Libraries have 291 usable logic and 126 usable sequential lib-cells.
+  Libraries have 291 usable logic and 126 usable sequential lib-cells.
+Info    : Elaborating Design. [ELAB-1]
+        : Elaborating top-level block 'uart_apb_top' from file '../rtl/uart_apb/top.sv'.
+Warning : Using default parameter value for module elaboration. [CDFG-818]
+        : Elaborating block 'uart_apb_top' with default parameters value.
+Info    : Elaborating Subdesign. [ELAB-2]
+        : Elaborating block 'apb_uart_sv_APB_ADDR_WIDTH12_TX_FIFO_DEPTH16_RX_FIFO_DEPTH16' from file '../rtl/uart_apb/apb_uart_sv.sv'.
+Info    : Processing multi-dimensional arrays. [CDFG-250]
+        : Variable 'tx_fifo_mem' in module 'apb_uart_sv_APB_ADDR_WIDTH12_TX_FIFO_DEPTH16_RX_FIFO_DEPTH16' in file '../rtl/uart_apb/apb_uart_sv.sv' on line 137.
+Info    : Processing multi-dimensional arrays. [CDFG-250]
+        : Variable 'rx_fifo_mem' in module 'apb_uart_sv_APB_ADDR_WIDTH12_TX_FIFO_DEPTH16_RX_FIFO_DEPTH16' in file '../rtl/uart_apb/apb_uart_sv.sv' on line 480.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'MCR_q' [8] doesn't match the width of right hand side [5] in assignment in file '../rtl/uart_apb/apb_uart_sv.sv' on line 674.
+        : Review and make sure the mismatch is intentional. Genus can possibly issue bitwidth mismatch warning for explicit assignments present in RTL as-well-as for implicit assignments inferred by the tool. For example, in case of enum declaration without value, the tool will implicitly assign value to the enum variables. It also issues the warning for any bitwidth mismatch that appears in this implicit assignment.
+Warning : Unreachable statements for case item. [CDFG-472]
+        : Case item 'default' in module 'apb_uart_sv_APB_ADDR_WIDTH12_TX_FIFO_DEPTH16_RX_FIFO_DEPTH16' in file '../rtl/uart_apb/apb_uart_sv.sv' on line 689.
+Warning : Removing unused register. [CDFG-508]
+        : Removing unused flip-flop register 'baud_x16_cnt' in module 'apb_uart_sv_APB_ADDR_WIDTH12_TX_FIFO_DEPTH16_RX_FIFO_DEPTH16' in file '../rtl/uart_apb/apb_uart_sv.sv' on line 219.
+        : Genus removes the flip-flop or latch inferred for an unused signal or variable. To preserve the flip-flop or latch, set the hdl_preserve_unused_registers attribute to true or use a pragma in the RTL.
+Warning : Removing unused register. [CDFG-508]
+        : Removing unused flip-flop register 'rx_fe' in module 'apb_uart_sv_APB_ADDR_WIDTH12_TX_FIFO_DEPTH16_RX_FIFO_DEPTH16' in file '../rtl/uart_apb/apb_uart_sv.sv' on line 455.
+Warning : Removing unused register. [CDFG-508]
+        : Removing unused flip-flop register 'rx_bi' in module 'apb_uart_sv_APB_ADDR_WIDTH12_TX_FIFO_DEPTH16_RX_FIFO_DEPTH16' in file '../rtl/uart_apb/apb_uart_sv.sv' on line 457.
+Info    : Common subexpression eliminated. [CDFG-738]
+        : Eliminated '%bit-concat%' in file '../rtl/uart_apb/apb_uart_sv.sv' on line 360.
+Info    : Common subexpression kept. [CDFG-739]
+        : Kept '%bit-concat%' in file '../rtl/uart_apb/apb_uart_sv.sv' on line 246.
+Info    : Common subexpression eliminated. [CDFG-738]
+        : Eliminated '%bit-select%' in file '../rtl/uart_apb/apb_uart_sv.sv' on line 420.
+Info    : Common subexpression kept. [CDFG-739]
+        : Kept '%bit-select%' in file '../rtl/uart_apb/apb_uart_sv.sv' on line 281.
+Info    : Common subexpression eliminated. [CDFG-738]
+        : Eliminated '%bit-select%' in file '../rtl/uart_apb/apb_uart_sv.sv' on line 266.
+Info    : Common subexpression kept. [CDFG-739]
+        : Kept '%bit-select%' in file '../rtl/uart_apb/apb_uart_sv.sv' on line 390.
+Info    : Common subexpression eliminated. [CDFG-738]
+        : Eliminated '%bit-select%' in file '../rtl/uart_apb/apb_uart_sv.sv' on line 290.
+Info    : Common subexpression kept. [CDFG-739]
+        : Kept '%bit-select%' in file '../rtl/uart_apb/apb_uart_sv.sv' on line 390.
+Info    : Common subexpression eliminated. [CDFG-738]
+        : Eliminated '%bit-select%' in file '../rtl/uart_apb/apb_uart_sv.sv' on line 438.
+Info    : Common subexpression kept. [CDFG-739]
+        : Kept '%bit-select%' in file '../rtl/uart_apb/apb_uart_sv.sv' on line 390.
+Info    : Common subexpression eliminated. [CDFG-738]
+        : Eliminated '%bit-select%' in file '../rtl/uart_apb/apb_uart_sv.sv' on line 333.
+Info    : Common subexpression kept. [CDFG-739]
+        : Kept '%bit-select%' in file '../rtl/uart_apb/apb_uart_sv.sv' on line 722.
+Info    : Common subexpression eliminated. [CDFG-738]
+        : Eliminated '%bit-select%' in file '../rtl/uart_apb/apb_uart_sv.sv' on line 436.
+Info    : Common subexpression kept. [CDFG-739]
+        : Kept '%bit-select%' in file '../rtl/uart_apb/apb_uart_sv.sv' on line 290.
+Info    : Common subexpression eliminated. [CDFG-738]
+        : Eliminated '%bit-select%' in file '../rtl/uart_apb/apb_uart_sv.sv' on line 672.
+Info    : Common subexpression kept. [CDFG-739]
+        : Kept '%bit-select%' in file '../rtl/uart_apb/apb_uart_sv.sv' on line 156.
+Info    : Common subexpression eliminated. [CDFG-738]
+        : Eliminated '%bit-select%' in file '../rtl/uart_apb/apb_uart_sv.sv' on line 673.
+Info    : Common subexpression kept. [CDFG-739]
+        : Kept '%bit-select%' in file '../rtl/uart_apb/apb_uart_sv.sv' on line 156.
+Info    : Common subexpression eliminated. [CDFG-738]
+        : Eliminated '%bit-select%' in file '../rtl/uart_apb/apb_uart_sv.sv' on line 675.
+Info    : Common subexpression kept. [CDFG-739]
+        : Kept '%bit-select%' in file '../rtl/uart_apb/apb_uart_sv.sv' on line 156.
+Info    : Common subexpression eliminated. [CDFG-738]
+        : Eliminated '%bit-select%' in file '../rtl/uart_apb/apb_uart_sv.sv' on line 669.
+Info    : Common subexpression kept. [CDFG-739]
+        : Kept '%bit-select%' in file '../rtl/uart_apb/apb_uart_sv.sv' on line 156.
+Info    : Common subexpression eliminated. [CDFG-738]
+        : Eliminated '%bit-select%' in file '../rtl/uart_apb/apb_uart_sv.sv' on line 670.
+Info    : Common subexpression kept. [CDFG-739]
+        : Kept '%bit-select%' in file '../rtl/uart_apb/apb_uart_sv.sv' on line 156.
+Info    : Common subexpression eliminated. [CDFG-738]
+        : Eliminated '%bit-select%' in file '../rtl/uart_apb/apb_uart_sv.sv' on line 671.
+Info    : Common subexpression kept. [CDFG-739]
+        : Kept '%bit-select%' in file '../rtl/uart_apb/apb_uart_sv.sv' on line 156.
+Info    : Common subexpression eliminated. [CDFG-738]
+        : Eliminated '+' in file '../rtl/uart_apb/apb_uart_sv.sv' on line 425.
+Info    : Common subexpression kept. [CDFG-739]
+        : Kept '+' in file '../rtl/uart_apb/apb_uart_sv.sv' on line 405.
+Info    : Common subexpression eliminated. [CDFG-738]
+        : Eliminated '+' in file '../rtl/uart_apb/apb_uart_sv.sv' on line 444.
+Info    : Common subexpression kept. [CDFG-739]
+        : Kept '+' in file '../rtl/uart_apb/apb_uart_sv.sv' on line 405.
+Info    : Common subexpression eliminated. [CDFG-738]
+        : Eliminated '+' in file '../rtl/uart_apb/apb_uart_sv.sv' on line 466.
+Info    : Common subexpression kept. [CDFG-739]
+        : Kept '+' in file '../rtl/uart_apb/apb_uart_sv.sv' on line 405.
+Info    : Common subexpression eliminated. [CDFG-738]
+        : Eliminated '+' in file '../rtl/uart_apb/apb_uart_sv.sv' on line 298.
+Info    : Common subexpression kept. [CDFG-739]
+        : Kept '+' in file '../rtl/uart_apb/apb_uart_sv.sv' on line 283.
+Info    : Common subexpression eliminated. [CDFG-738]
+        : Eliminated '==' in file '../rtl/uart_apb/apb_uart_sv.sv' on line 150.
+Info    : Common subexpression kept. [CDFG-739]
+        : Kept '==' in file '../rtl/uart_apb/apb_uart_sv.sv' on line 148.
+Info    : Common subexpression eliminated. [CDFG-738]
+        : Eliminated '==' in file '../rtl/uart_apb/apb_uart_sv.sv' on line 505.
+Info    : Common subexpression kept. [CDFG-739]
+        : Kept '==' in file '../rtl/uart_apb/apb_uart_sv.sv' on line 148.
+Info    : Common subexpression eliminated. [CDFG-738]
+        : Eliminated '==' in file '../rtl/uart_apb/apb_uart_sv.sv' on line 316.
+Info    : Common subexpression kept. [CDFG-739]
+        : Kept '==' in file '../rtl/uart_apb/apb_uart_sv.sv' on line 248.
+Warning : Maximum message print count reached. [MESG-11]
+        : Maximum print count of '20' reached for message 'CDFG-738'.
+Warning : Maximum message print count reached. [MESG-11]
+        : Maximum print count of '20' reached for message 'CDFG-739'.
+Info    : Unused module input port. [CDFG-500]
+        : Input port 'msr_read_clr_i' is not used in module 'apb_uart_sv_APB_ADDR_WIDTH12_TX_FIFO_DEPTH16_RX_FIFO_DEPTH16' in file '../rtl/uart_apb/apb_uart_sv.sv' on line 62.
+        : (In port definition within the module, the input port is not used in any assignment statements or conditional expressions for decision statements.
+Info    : Unused instance port. [ELABUTL-132]
+        : Unused Port 'event_o' of instance 'u_uart_core' of module 'apb_uart_sv_APB_ADDR_WIDTH12_TX_FIFO_DEPTH16_RX_FIFO_DEPTH16' inside module 'uart_apb_top' in file '../rtl/uart_apb/top.sv' on line 116.
+        : Please check the reported scenario of unconnected instance port to ensure that it matches the design intent.
+Info    : Elaborating Subdesign. [ELAB-2]
+        : Elaborating block 'uart_interface_block' from file '../rtl/uart_apb/uart_interface_block.sv'.
+Info    : Unused instance port. [ELABUTL-132]
+        : Unused Port 'rx_serial_o' of instance 'u_intf_block' of module 'uart_interface_block' inside module 'uart_apb_top' in file '../rtl/uart_apb/top.sv' on line 176.
+Info    : Elaborating Subdesign. [ELAB-2]
+        : Elaborating block 'uart_interrupt_ctrl' from file '../rtl/uart_apb/uart_interrupt_ctrl.sv'.
+Info    : Unused module input port. [CDFG-500]
+        : Input port 'clk_i' is not used in module 'uart_interrupt_ctrl' in file '../rtl/uart_apb/uart_interrupt_ctrl.sv' on line 20.
+Info    : Unused module input port. [CDFG-500]
+        : Input port 'rstn_i' is not used in module 'uart_interrupt_ctrl' in file '../rtl/uart_apb/uart_interrupt_ctrl.sv' on line 21.
+Info    : Unused instance port. [ELABUTL-132]
+        : Unused Port 'modem_int_o' of instance 'u_irq_ctrl' of module 'uart_interrupt_ctrl' inside module 'uart_apb_top' in file '../rtl/uart_apb/top.sv' on line 222.
+Info    : Unused instance port. [ELABUTL-132]
+        : Unused Port 'line_int_o' of instance 'u_irq_ctrl' of module 'uart_interrupt_ctrl' inside module 'uart_apb_top' in file '../rtl/uart_apb/top.sv' on line 222.
+Info    : Elaborating Subdesign. [ELAB-2]
+        : Elaborating block 'uart_dma_handshake' from file '../rtl/uart_apb/uart_dma_handshake.sv'.
+Info    : Unused module input port. [CDFG-500]
+        : Input port 'tx_fifo_empty_i' is not used in module 'uart_dma_handshake' in file '../rtl/uart_apb/uart_dma_handshake.sv' on line 25.
+Info    : Unused module input port. [CDFG-500]
+        : Input port 'rx_fifo_full_i' is not used in module 'uart_dma_handshake' in file '../rtl/uart_apb/uart_dma_handshake.sv' on line 30.
+Info    : Unused instance port. [ELABUTL-132]
+        : Unused Port 'dma_tx_active_o' of instance 'u_dma' of module 'uart_dma_handshake' inside module 'uart_apb_top' in file '../rtl/uart_apb/top.sv' on line 259.
+Info    : Unused instance port. [ELABUTL-132]
+        : Unused Port 'dma_rx_active_o' of instance 'u_dma' of module 'uart_dma_handshake' inside module 'uart_apb_top' in file '../rtl/uart_apb/top.sv' on line 259.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'tx_wr_ptr[0]' in module 'apb_uart_sv_APB_ADDR_WIDTH12_TX_FIFO_DEPTH16_RX_FIFO_DEPTH16'.
+        : This may cause simulation mismatches between the original and synthesized designs.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'tx_wr_ptr[1]' in module 'apb_uart_sv_APB_ADDR_WIDTH12_TX_FIFO_DEPTH16_RX_FIFO_DEPTH16'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'tx_wr_ptr[2]' in module 'apb_uart_sv_APB_ADDR_WIDTH12_TX_FIFO_DEPTH16_RX_FIFO_DEPTH16'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'tx_wr_ptr[3]' in module 'apb_uart_sv_APB_ADDR_WIDTH12_TX_FIFO_DEPTH16_RX_FIFO_DEPTH16'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'tx_wr_ptr[4]' in module 'apb_uart_sv_APB_ADDR_WIDTH12_TX_FIFO_DEPTH16_RX_FIFO_DEPTH16'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'tx_rd_ptr[0]' in module 'apb_uart_sv_APB_ADDR_WIDTH12_TX_FIFO_DEPTH16_RX_FIFO_DEPTH16'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'tx_rd_ptr[1]' in module 'apb_uart_sv_APB_ADDR_WIDTH12_TX_FIFO_DEPTH16_RX_FIFO_DEPTH16'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'tx_rd_ptr[2]' in module 'apb_uart_sv_APB_ADDR_WIDTH12_TX_FIFO_DEPTH16_RX_FIFO_DEPTH16'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'tx_rd_ptr[3]' in module 'apb_uart_sv_APB_ADDR_WIDTH12_TX_FIFO_DEPTH16_RX_FIFO_DEPTH16'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'tx_rd_ptr[4]' in module 'apb_uart_sv_APB_ADDR_WIDTH12_TX_FIFO_DEPTH16_RX_FIFO_DEPTH16'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'rx_wr_ptr[0]' in module 'apb_uart_sv_APB_ADDR_WIDTH12_TX_FIFO_DEPTH16_RX_FIFO_DEPTH16'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'rx_wr_ptr[1]' in module 'apb_uart_sv_APB_ADDR_WIDTH12_TX_FIFO_DEPTH16_RX_FIFO_DEPTH16'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'rx_wr_ptr[2]' in module 'apb_uart_sv_APB_ADDR_WIDTH12_TX_FIFO_DEPTH16_RX_FIFO_DEPTH16'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'rx_wr_ptr[3]' in module 'apb_uart_sv_APB_ADDR_WIDTH12_TX_FIFO_DEPTH16_RX_FIFO_DEPTH16'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'rx_wr_ptr[4]' in module 'apb_uart_sv_APB_ADDR_WIDTH12_TX_FIFO_DEPTH16_RX_FIFO_DEPTH16'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'rx_rd_ptr[0]' in module 'apb_uart_sv_APB_ADDR_WIDTH12_TX_FIFO_DEPTH16_RX_FIFO_DEPTH16'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'rx_rd_ptr[1]' in module 'apb_uart_sv_APB_ADDR_WIDTH12_TX_FIFO_DEPTH16_RX_FIFO_DEPTH16'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'rx_rd_ptr[2]' in module 'apb_uart_sv_APB_ADDR_WIDTH12_TX_FIFO_DEPTH16_RX_FIFO_DEPTH16'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'rx_rd_ptr[3]' in module 'apb_uart_sv_APB_ADDR_WIDTH12_TX_FIFO_DEPTH16_RX_FIFO_DEPTH16'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'rx_rd_ptr[4]' in module 'apb_uart_sv_APB_ADDR_WIDTH12_TX_FIFO_DEPTH16_RX_FIFO_DEPTH16'.
+Info    : Done Elaborating Design. [ELAB-3]
+        : Done elaborating 'uart_apb_top'.
+Checking for analog nets...
+Check completed for analog nets.
+Checking for source RTL...
+Check completed for source RTL.
+Running Unified Mux Engine Tricks...
+Completed Unified Mux Engine Tricks
+
+Stage: post_elab
+--------------------------------------------------------
+| Trick             | Accepts | Rejects | Runtime (ms) | 
+--------------------------------------------------------
+| ume_constant_bmux |       0 |       0 |         0.00 | 
+| ume_merge         |       0 |       0 |         0.00 | 
+| ume_ssm           |       0 |       0 |         1.00 | 
+| ume_cse           |       1 |       0 |         4.00 | 
+| ume_shrink        |       0 |       0 |         0.00 | 
+| ume_sweep         |       0 |       0 |         0.00 | 
+| ume_constant_bmux |       0 |       0 |         0.00 | 
+| ume_merge         |       0 |       0 |         0.00 | 
+| ume_ssm           |       0 |       0 |         1.00 | 
+| ume_cse           |       0 |       0 |         3.00 | 
+| ume_shrink        |       0 |       0 |         0.00 | 
+| ume_sweep         |       0 |       0 |         0.00 | 
+--------------------------------------------------------
+Starting optimize datapath shifters [v1.0] (stage: post_elab, startdef: uart_apb_top, recur: true)
+Completed optimize datapath shifters (accepts: 0, rejects: 0, runtime: 0.000s)
+Starting clip mux common data inputs [v1.0] (stage: post_elab, startdef: uart_apb_top, recur: true)
+Completed clip mux common data inputs (accepts: 0, rejects: 0, runtime: 0.000s)
+Starting clip the non-user hierarchies [v2.0] (stage: post_elab, startdef: uart_apb_top, recur: true)
+Completed clip the non-user hierarchies (accepts: 0, rejects: 0, runtime: 0.001s)
+Starting basic netlist cleanup [v1.0] (stage: post_elab, startdef: uart_apb_top, recur: true)
+Completed basic netlist cleanup (accepts: 0, rejects: 0, runtime: 0.000s)
+
+Stage: post_elab
+---------------------------------------------------------------------
+| Transform                      | Accepts | Rejects | Runtime (ms) | 
+---------------------------------------------------------------------
+| hlo_optimize_datapath_shifters |       0 |       0 |         0.00 | 
+| hlo_clip_mux_input             |       0 |       0 |         0.00 | 
+| hlo_clip                       |       0 |       0 |         1.00 | 
+| hlo_cleanup                    |       0 |       0 |         0.00 | 
+---------------------------------------------------------------------
+UM:   flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:*                                                                   elaborate
+Runtime & Memory after 'read_hdl'
+stamp 'Elaboration' being created for table 'default'
+
+  Total Time (Wall) |  Stage Time (Wall)  |   % (Wall)   |    Date - Time     |  Memory   | Stage
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:10(00:00:00) |  00:00:00(00:00:00) |   0.0(  0.0) |   11:44:20 (Apr24) |  222.2 MB | init
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:18(00:00:12) |  00:00:08(00:00:12) | 100.0(100.0) |   11:44:32 (Apr24) |  358.1 MB | Elaboration
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+Number of threads: 8 * 1   (id: default, time_info v1.57)
+Info: (*N*) indicates data that was populated from previously saved time_info database
+Info: CPU time includes time of parent + longest thread
+Warning : Port names affected by this command do not automatically get updated in written out SV wrapper module. [CHNM-108] [change_names]
+        : If user is setting  write_sv_port_wrapper = true then the port names affected by usage of change_names  
+      need to be updated manually in the written out SV wrapper module.
+        : If user is setting write_sv_port_wrapper = true then the port names affected by this command need to be updated manually in the written out SV wrapper module.
+Info    : -append_log option is used along with -log. [CHNM-104] [change_names]
+        : Appending the log to logs/change_names.log
+Info    : Changed names successfully. [CHNM-102]
+        : '/designs/uart_apb_top/nets/msr_from_intf[4]' moved to '/designs/uart_apb_top/nets/msr_from_intfx4x'.
+Info    : Changed names successfully. [CHNM-102]
+        : '/designs/uart_apb_top/nets/msr_from_intf[5]' moved to '/designs/uart_apb_top/nets/msr_from_intfx5x'.
+Info    : Changed names successfully. [CHNM-102]
+        : '/designs/uart_apb_top/nets/msr_from_intf[6]' moved to '/designs/uart_apb_top/nets/msr_from_intfx6x'.
+Info    : Changed names successfully. [CHNM-102]
+        : '/designs/uart_apb_top/nets/msr_from_intf[7]' moved to '/designs/uart_apb_top/nets/msr_from_intfx7x'.
+Info    : Changed names successfully. [CHNM-102]
+        : '/designs/uart_apb_top/nets/msr_from_intf[0]' moved to '/designs/uart_apb_top/nets/msr_from_intfx0x'.
+Info    : Changed names successfully. [CHNM-102]
+        : '/designs/uart_apb_top/nets/msr_from_intf[1]' moved to '/designs/uart_apb_top/nets/msr_from_intfx1x'.
+Info    : Changed names successfully. [CHNM-102]
+        : '/designs/uart_apb_top/nets/msr_from_intf[2]' moved to '/designs/uart_apb_top/nets/msr_from_intfx2x'.
+Info    : Changed names successfully. [CHNM-102]
+        : '/designs/uart_apb_top/nets/msr_from_intf[3]' moved to '/designs/uart_apb_top/nets/msr_from_intfx3x'.
+Info    : Changed names successfully. [CHNM-102]
+        : '/designs/uart_apb_top/nets/tx_fifo_elements[0]' moved to '/designs/uart_apb_top/nets/tx_fifo_elementsx0x'.
+Info    : Changed names successfully. [CHNM-102]
+        : '/designs/uart_apb_top/nets/tx_fifo_elements[1]' moved to '/designs/uart_apb_top/nets/tx_fifo_elementsx1x'.
+Info    : Changed names successfully. [CHNM-102]
+        : '/designs/uart_apb_top/nets/tx_fifo_elements[2]' moved to '/designs/uart_apb_top/nets/tx_fifo_elementsx2x'.
+Info    : Changed names successfully. [CHNM-102]
+        : '/designs/uart_apb_top/nets/tx_fifo_elements[3]' moved to '/designs/uart_apb_top/nets/tx_fifo_elementsx3x'.
+Info    : Changed names successfully. [CHNM-102]
+        : '/designs/uart_apb_top/nets/tx_fifo_elements[4]' moved to '/designs/uart_apb_top/nets/tx_fifo_elementsx4x'.
+Info    : Changed names successfully. [CHNM-102]
+        : '/designs/uart_apb_top/nets/rx_fifo_elements[0]' moved to '/designs/uart_apb_top/nets/rx_fifo_elementsx0x'.
+Info    : Changed names successfully. [CHNM-102]
+        : '/designs/uart_apb_top/nets/rx_fifo_elements[1]' moved to '/designs/uart_apb_top/nets/rx_fifo_elementsx1x'.
+Info    : Changed names successfully. [CHNM-102]
+        : '/designs/uart_apb_top/nets/rx_fifo_elements[2]' moved to '/designs/uart_apb_top/nets/rx_fifo_elementsx2x'.
+Info    : Changed names successfully. [CHNM-102]
+        : '/designs/uart_apb_top/nets/rx_fifo_elements[3]' moved to '/designs/uart_apb_top/nets/rx_fifo_elementsx3x'.
+Info    : Changed names successfully. [CHNM-102]
+        : '/designs/uart_apb_top/nets/rx_fifo_elements[4]' moved to '/designs/uart_apb_top/nets/rx_fifo_elementsx4x'.
+Info    : Changed names successfully. [CHNM-102]
+        : '/designs/uart_apb_top/nets/ier_bits[0]' moved to '/designs/uart_apb_top/nets/ier_bitsx0x'.
+Info    : Changed names successfully. [CHNM-102]
+        : '/designs/uart_apb_top/nets/ier_bits[1]' moved to '/designs/uart_apb_top/nets/ier_bitsx1x'.
+Warning : Maximum message print count reached. [MESG-11]
+        : Maximum print count of '20' reached for message 'CHNM-102'.
+Warning : Port names affected by this command do not automatically get updated in written out SV wrapper module. [CHNM-108] [change_names]
+        : If user is setting  write_sv_port_wrapper = true then the port names affected by usage of change_names  
+      need to be updated manually in the written out SV wrapper module.
+Info    : -append_log option is used along with -log. [CHNM-104] [change_names]
+        : Appending the log to logs/change_names.log
+Warning : Port names affected by this command do not automatically get updated in written out SV wrapper module. [CHNM-108] [change_names]
+        : If user is setting  write_sv_port_wrapper = true then the port names affected by usage of change_names  
+      need to be updated manually in the written out SV wrapper module.
+Info    : -append_log option is used along with -log. [CHNM-104] [change_names]
+        : Appending the log to logs/change_names.log
+Warning : Port names affected by this command do not automatically get updated in written out SV wrapper module. [CHNM-108] [change_names]
+        : If user is setting  write_sv_port_wrapper = true then the port names affected by usage of change_names  
+      need to be updated manually in the written out SV wrapper module.
+Info    : -append_log option is used along with -log. [CHNM-104] [change_names]
+        : Appending the log to logs/change_names.log
+Warning : Port names affected by this command do not automatically get updated in written out SV wrapper module. [CHNM-108] [change_names]
+        : If user is setting  write_sv_port_wrapper = true then the port names affected by usage of change_names  
+      need to be updated manually in the written out SV wrapper module.
+Info    : -append_log option is used along with -log. [CHNM-104] [change_names]
+        : Appending the log to logs/change_names.log
+Warning : The desired object will not be renamed as expected. [CHNM-111]
+        : The proposed replacement string is present in one of the restricted lists.
+        : Provide a replacement string that is not present in either restricted string list.
+Warning : Port names affected by this command do not automatically get updated in written out SV wrapper module. [CHNM-108] [change_names]
+        : If user is setting  write_sv_port_wrapper = true then the port names affected by usage of change_names  
+      need to be updated manually in the written out SV wrapper module.
+
+
+ 	 Check Design Report (c)
+	 ------------------- 
+
+  Unresolved References & Empty Modules
+  ------------------------------------- 
+No unresolved references in design 'uart_apb_top'
+
+No empty modules in design 'uart_apb_top'
+
+  Done Checking the design.
+Error: Unable to find ../rtl/uart_apb/top.sdc
+#@ End verbose source ./run_syn.tcl
+Failed on read_sdc
+Encountered problems processing file: run_syn.tcl
+WARNING: This version of the tool is 1083 days old.
+legacy_genus:/> exit\
+
+
+Lic Summary:
+[11:44:40.240002] Cdslmd servers: fpt-lisc
+[11:44:40.240008] Feature usage summary:
+[11:44:40.240009] Genus_Synthesis
+
+Normal exit.

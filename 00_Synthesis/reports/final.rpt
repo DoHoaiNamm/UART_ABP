@@ -1,0 +1,51 @@
+
+
+Working Directory = /home/QUYETDT3/DATN/ver3_UART_APB/00_Synthesis
+QoS Summary for uart_apb_top
+==========================================================================================
+Metric                          generic         map             syn_opt         final          
+==========================================================================================
+Slack (ps):                        97               6               0               0
+  R2R (ps):                       233               6               2               2
+  I2R (ps):                       255              38               3               3
+  R2O (ps):                        97              63               0               0
+  I2O (ps):                       391              35              26              26
+  CG  (ps):                       289              53              39              39
+TNS (ps):                           0               0               0               0
+  R2R (ps):                         0               0               0               0
+  I2R (ps):                         0               0               0               0
+  R2O (ps):                         0               0               0               0
+  I2O (ps):                         0               0               0               0
+  CG  (ps):                         0               0               0               0
+Failing Paths:                      0               0               0               0
+Cell Area:                        344           6,598           6,310           6,310
+Total Cell Area:                  344           6,598           6,310           6,310
+Leaf Instances:                 2,189           1,484           1,393           1,393
+Total Instances:                2,189           1,484           1,393           1,393
+Utilization (%):                 0.00            0.00            0.00            0.00
+Tot. Net Length (um):        no_value        no_value        no_value        no_value
+Avg. Net Length (um):        no_value        no_value        no_value        no_value
+Route Overflow H (%):        no_value        no_value        no_value        no_value
+Route Overflow V (%):        no_value        no_value        no_value        no_value
+MBCI(%) (bits/gate) :            0.00            0.00            0.00            0.00
+Norm Cong Hotspot Area:
+  Max Cong:                  no_value        no_value        no_value        no_value
+  Tot Cong:                  no_value        no_value        no_value        no_value
+==========================================================================================
+CPU  Runtime (h:m:s):        00:00:33        00:00:18        00:00:07        00:00:01
+Real Runtime (h:m:s):        00:00:48        00:00:26        00:00:10        00:00:03
+CPU  Elapsed (h:m:s):        00:00:43        00:01:02        00:01:08        00:01:09
+Real Elapsed (h:m:s):        00:00:53        00:01:19        00:01:29        00:01:31
+Memory (MB):                  1512.77         1502.46         1503.28         1503.28
+==========================================================================================
+==========================================================================================
+Flow Settings:
+==========================================================================================
+Total Runtime (h:m:s): 00:01:30
+Total Memory (MB):     1503.28
+Executable Version:    22.12-s082_1
+==========================================================================================
+Total Cell Area =  Cell Area + Physical Cell Area
+Total Instances =  Leaf Instances + Physical Instances
+
+
