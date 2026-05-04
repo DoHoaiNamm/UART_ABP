@@ -1,0 +1,11 @@
+##############################################################
+#Purpose: This one is used to guide Team step by step to do Project 
+#                Please ask me if there is any problem    
+##############################################################
+[PD Team][04/05-08/05]
+1. Investigate Doc of UART
+     - Read to understand and define data path and answer by your self: why do we need to understand data path
+2. PD Implement using 45nm lib as reference Env
+         - Floorplan definition 
+     	+ Define die size for minimum 
+     	+ Create port location of IP        
